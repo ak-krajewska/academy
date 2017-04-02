@@ -8,7 +8,10 @@ body {
     background-color: white;
     font-family: Helvetica, sans-serif;
     font-size: 16px;
+    
 }
+
+
 
 .container {
     width: 1172px;
@@ -17,6 +20,14 @@ body {
 
 .container-flex {
     display: flex;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+.gray {
+    background-color: lightgray;
 }
 
 /* nav styles */
@@ -33,6 +44,7 @@ nav ul {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem 0;
+    list-style-type: none;
     
 }
 .brand {
@@ -41,6 +53,133 @@ nav ul {
     justify-content: flex-start;
 }
 
-nav {
+/* body styles */
+
+.primary {
+    display: flex;
+    flex-direction: column;
+    width: 706px;
+    margin: 32px 24px;
+}
+
+#banner {
+    background-image: url(images/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 522px;
+}
+.secondary-gray {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 423px;
+    margin: 24px 0 32px 0;
+    padding: 60px 80px 60px 16px;
+}
+
+.button {
+    color: white;
+    background-color: black;
+}
+
+.container-gray {
+    background-color: lightgray;
+}
+
+#information {
+    background-image: url(images/information-main.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 388px;
+}
+
+.secondary-white {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 423px;
+    margin: 32px;
     
+}
+
+.tertiary {
+    display: flex;
+    align-items: center;
+}
+
+
+#orientation {
+    align-items: flex-start;
+}
+
+
+/* courses list grid */
+
+.courses-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.course {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 289px;
+}
+
+.courses-section {
+    display: flex;
+    flex-direction: column;
+    width: 932px;
+    margin: 0 auto 32px auto;
+    justify-content: space-between;
+}
+
+/* thesis styles */
+
+.primary-thesis {
+    display: flex;
+    flex-direction: column;
+    margin: 32px 16px 32px 24px;
+    width: 709px;
+}
+
+.secondary-thesis {
+    display: flex;
+    flex-direction: column;
+    width: 423px;
+}
+
+.thesis-project-gray {
+    display: flex;
+    background-color: lightgray;
+}
+
+.secondary-thesis img {
+    padding: 16px;
+}
+
+.thesis-project-white {
+    display: flex;
+    
+}
+
+/* footer styles */
+
+footer{
+    justify-content: space-between;
+}
+
+.copyright {
+    display: flex;
+    padding-left: 24px;
+}
+
+.legal {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 16px;
 }

@@ -22,37 +22,38 @@
             </ul>
       </nav>
     <!-- big gray container -->
-      <div class="container">
+      <div class="container container-flex container-gray">
       <!-- an image on the left -->
-          <div>
-            <img src="resources/images/banner.jpg">
+          <div class="primary" id="banner">
+            <!-- <img src="resources/images/banner.jpg"> -->
           </div>
       <!-- text with a button on the right -->
-          <div>
+          <div class="secondary-gray">
             <h1>Learn something new every day</h1>
             <h2>Lorem ipsum bob and alice require to send a secret message</h2>
-              <div>
-                  Start Here
-              </div>
+              <div class="button">Start Here</div>
           </div>
       </div>
     <!-- big white container -->
-      <div class="container">
+      <div class="container container-flex">
       <!-- an image on the left -->
-          <div class="container">
-            <img src="resources/images/information-main.jpg">
-        <!-- descriptive text for the image -->
+          <div class="primary">
+            <div  id="information">
+                <!-- <img src="resources/images/information-main.jpg"> -->
+                stuff stuff stuff
+            </div>
+              <!-- descriptive text for the image -->
               <div>
-                  <h1>It doesn't hurt to keep preacticing</h1>
+                  <h1>It doesn't hurt to keep practicing</h1>
                   <p>Donec dictum ornare odio vel sodales. Aenean molestie urna ut lacus pulvinar viverra vel nec est. Ut mollis leo vel nibh mattis vestibulum. Suspendisse congue non sapien sit amet ornare. </p>
                   <p>Emanuel, Sr Strategist at Hiring.com</p>
               </div>
           </div>
       <!-- a series of three small images with descriptions on the right -->
-          <div>
+          <div class="secondary-white">
             <!-- unit of small image and text -->
-            <div>
-                <div>
+            <div class="tertiary">
+                <div id="orientation">
                     <img src="resources/images/information-orientation.jpg">
                 </div>
                 <div>
@@ -63,8 +64,8 @@
             </div>
             
             <!-- unit of small image and text -->
-            <div>
-                <div>
+            <div class="tertiary">
+                <div id="campus">
                     <img src="resources/images/information-campus.jpg">
                 </div>
                 <div>
@@ -75,8 +76,8 @@
             </div>
               
             <!-- unit of small image and text -->
-            <div>
-                <div>
+            <div class="tertiary gray">
+                <div id="guest">
                     <img src="resources/images/information-guest-lecture.jpg">
                 </div>
                 <div>
@@ -90,15 +91,20 @@
           
           </div>
       </div>
-    <!-- big gray container box -->
-      <div class="container">
+      <div class="container container-flex container-gray">
       <!--- text header -->
+        
           <h1>Start Learning</h1>
+      </div>
+    <!-- big gray container box -->
+      <div class="container container-flex container-gray">
+      
+    <div class="courses-section">
       <!-- two rows of 3 images with descriptions -->
           <!-- first row -->
-          <div>
+          <div class="courses-list">
               <!-- column 1-->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-software.jpg">
                   </div>
@@ -109,7 +115,7 @@
                   </div>
               </div>
               <!-- column 2 -->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-computer-art.jpg">
                   </div>
@@ -120,7 +126,7 @@
                   </div>
               </div>
               <!-- column 3 -->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-design.jpg">
                   </div>
@@ -132,9 +138,9 @@
               </div>
            </div>
           <!-- second row -->
-          <div>
+          <div class="courses-list">
               <!-- column 1-->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-data.jpg">
                   </div>
@@ -145,7 +151,7 @@
                   </div>
               </div>
               <!-- column 2-->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-business.jpg">
                   </div>
@@ -156,7 +162,7 @@
                   </div>
               </div>
               <!-- column 3-->
-              <div>
+              <div class="course">
                   <div>
                       <img src="resources/images/course-marketing.jpg">
                   </div>
@@ -168,20 +174,28 @@
               </div>
            </div>
       </div>
+      </div>
     <!-- big white container -->
-      <div class="container">
+      <div class="container container-flex">
           <h1>Thesis exhibit</h1>
+      </div>
+      <!-- big white container -->
+      <div class="container container-flex">
       <!-- video on the left with description-->
-          <div>
-              <video src="resources/videos/thesis.mp4" controls></video>
+          <div class="primary-thesis">
+            <video src="resources/videos/thesis.mp4" width="709"  controls>
+                Video not supported
+            </video>
               <h2>Reimagine urban</h2>
               <p>Pellentesque sit amet mattis erat. Aenean faucibus massa arcu, vitae malesuada velit condimentum posuere. Nunc turpis enim, placerat vitae venenatis at, condimentum nec metus. Pellentesque a congue ligula. Aliquam erat volutpat. Donec tempus aliquam orci quis egestas.</p>
           </div>
       <!-- two images on the right with descritipns -->
-          <div>
+          <div class="secondary-thesis">
               <!-- image with gray background -->
-              <div>
-                  <div><img src="resources/images/thesis-fisma.jpg"></div>
+              <div class="thesis-project-gray">
+                  <div>
+                      <img src="resources/images/thesis-fisma.jpg">
+                  </div>
                   <div>
                       <h2>Fisma: Design and</h2>
                       <p>Designer showcase of new prototype product</p>
@@ -189,22 +203,24 @@
               </div>
                 
               <!-- image with white background -->
-              <div>
-                  <div><img src="resources/images/thesis-now-and-then.jpg"></div>
-                  <div>
+              <div class="thesis-project-white">
+                <div>
+                    <img src="resources/images/thesis-now-and-then.jpg">
+                </div>
+                <div>
                       <h2>Now and then</h2>
                       <p>Research study about New York</p>
-                  </div>
+                </div>
               </div>
           
           </div>
       </div>
     <!-- footer bar -->
-    <footer>
-        <div class="container">
-            (c) 2017 Colmar Academy. All rights reserved.
+    <footer class="container container-flex">
+        <div class="copyright">
+            &copy; 2017 Colmar Academy. All rights reserved.
         </div>
-        <div>
+        <div class="legal">
             <span>Terms</span>
             <span>Privacy</span>
         </div>
