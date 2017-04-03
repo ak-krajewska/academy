@@ -1,16 +1,42 @@
+/* dev only */
+/*
 div,nav, footer, ul {
-    border: 1px solid pink;
+    border: 1px solid hotpink;
 }
+*/
 
 /* global styles */
 
-body {
-    background-color: white;
-    font-family: Helvetica, sans-serif;
-    font-size: 16px;
-    
+h1 {
+    font-size: 40px;
 }
 
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 14px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 14px;
+    color: #029bce;
+}
+
+p {
+    line-height: 1.25em;
+}
+
+body {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: darkslategrey;   
+}
 
 
 .container {
@@ -22,9 +48,6 @@ body {
     display: flex;
 }
 
-h1 {
-    font-size: 40px;
-}
 
 .gray {
     background-color: lightgray;
@@ -37,20 +60,42 @@ nav {
     height: 64px;
     justify-content: space-between;
     
+    
 }
 
 nav ul {
-  display: inline-flex;
-  align-items: center;
-  justify-content: flex-end;
-  padding: 0.75rem 0;
+    display: inline-flex;
+    align-content: center;
+    justify-content: flex-end;
     list-style-type: none;
+    height: 64px;
+    margin: 0;  
+}
+
+nav li {
+    display: flex;
+    align-items: center;
+    height: 64px;
     
+}
+
+#colmar {
+   
+}
+
+#academy {
+    color: darkgray;
+}
+
+li:nth-child(2n + 2)  {
+   background-color: #94e8e2;
+    width: 16px;
 }
 .brand {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
+    padding-left: 24px;
 }
 
 /* body styles */
@@ -72,19 +117,31 @@ nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     width: 423px;
     margin: 24px 0 32px 0;
-    padding: 60px 80px 60px 16px;
+    padding: 60px 120px 60px 16px;
 }
 
 .button {
+    align-items: flex-start;
+    text-align: center;
     color: white;
-    background-color: black;
+    background-color: darkslategray;
+    padding: 8px 0;
+    width: 100%;
 }
 
 .container-gray {
     background-color: lightgray;
+}
+
+/* second box */
+
+
+.citation {
+    font-size: 16px;
+    font-weight: 600;
 }
 
 #information {
@@ -95,27 +152,51 @@ nav ul {
 }
 
 .secondary-white {
-    display: flex;
+    /*display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start; */
     width: 423px;
     margin: 32px;
     
 }
 
 .tertiary {
+    display: flex;    
+}
+
+.tertiary-label {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    justify-content: center;   
+}
+
+.tertiary-label h2, h3 h4 {
+    margin: 0;
+    
 }
 
 
 #orientation {
-    align-items: flex-start;
+    padding: 0 16px 0 16px;
+}
+
+#campus {
+    padding: 16px;
+}
+
+
+#guest {
+    padding: 16px;
 }
 
 
 /* courses list grid */
+
+#start-learning {
+    justify-content: center;
+    padding: 16px 0 10px 0;
+}
 
 .courses-list {
     display: flex;
@@ -124,10 +205,18 @@ nav ul {
 }
 
 .course {
-    display: flex;
-    flex-direction: column;
+    /*display: flex;
+    flex-direction: column;*/
     background-color: white;
     width: 289px;
+}
+
+.course-description {
+    padding: 16px 16px 24px 16px;
+}
+
+.course-description h2{
+    margin: 0;
 }
 
 .courses-section {
@@ -140,12 +229,22 @@ nav ul {
 
 /* thesis styles */
 
+#thesis {
+    justify-content: center;
+    padding: 16px 0 10px 0;
+}
+
 .primary-thesis {
     display: flex;
     flex-direction: column;
-    margin: 32px 16px 32px 24px;
+    margin: 0px 16px 32px 24px;
     width: 709px;
 }
+
+.primary-thesis .caption{
+    margin: 24px 0 32px 0;
+}
+
 
 .secondary-thesis {
     display: flex;
@@ -153,24 +252,20 @@ nav ul {
     width: 423px;
 }
 
-.thesis-project-gray {
-    display: flex;
-    background-color: lightgray;
-}
-
 .secondary-thesis img {
     padding: 16px;
 }
 
-.thesis-project-white {
+.thesis-project {
     display: flex;
+    align-items: center;
+}
+
     
 }
 
 /* footer styles */
 
-footer{
-    justify-content: space-between;
 }
 
 .copyright {
@@ -180,6 +275,28 @@ footer{
 
 .legal {
     display: flex;
-    justify-content: space-between;
     padding-right: 16px;
 }
+
+.legal span {
+    padding-left: 16px;
+}
+
+footer {
+    height: 64px;
+    border-top: 1px solid darkslategray;
+    padding-top: 5px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.citation {
+    font-size: 16px;
+    font-weight: 600;
+}
+
