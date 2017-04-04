@@ -7,6 +7,37 @@ div,nav, footer, ul {
 
 /* global styles */
 
+
+/* color scheme 
+
+#1A111C  EERIE BLACK
+#907F9F ROMAN SILVER  after click#695D74 DIM GRAY
+#E6E6E8 PLATINUM
+#E9EFED ISABELLINE
+#97C1AB CAMBRIDGE BLUE
+*/
+
+body {
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    color: #1A111C;
+}
+
+a {
+    color: #563872;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #907F9F;
+    
+}
+
+a:visited {
+    color: #695D74;
+}
+
 h1 {
     font-size: 40px;
 }
@@ -31,34 +62,27 @@ p {
     line-height: 1.25em;
 }
 
-body {
-    background-color: white;
-    font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
-    color: darkslategrey;   
-}
-
 
 .container {
+    display: flex;
     width: 1172px;
     margin: 0 auto;
 }
 
-.container-flex {
-    display: flex;
+.gray {
+    background-color: #E6E6E8;
 }
 
-
-.gray {
-    background-color: lightgray;
+.platinum {
+    background-color: #E9EFED;
 }
 
 /* nav styles */
 
 nav {
-    display: flex;
     height: 64px;
     justify-content: space-between;
+    background-color: #C1B6CB;
     
     
 }
@@ -80,15 +104,16 @@ nav li {
 }
 
 #colmar {
-   
+   font-weight: bold;
 }
 
 #academy {
-    color: darkgray;
+    font-weight: bold;
+    color: #907F9F;
 }
 
 li:nth-child(2n + 2)  {
-   background-color: #94e8e2;
+   background-color: #907F9F;
     width: 16px;
 }
 .brand {
@@ -127,17 +152,26 @@ li:nth-child(2n + 2)  {
     align-items: flex-start;
     text-align: center;
     color: white;
-    background-color: darkslategray;
+    background-color: #907F9F;
     padding: 8px 0;
     width: 100%;
+    border-radius: 10px;
+    
+}
+
+.button:hover {
+    background-color: #563872;
 }
 
 .container-gray {
-    background-color: lightgray;
+    background-color: #E9EFED;
 }
 
 /* second box */
 
+.pale-plum {
+    background-color: #E8E4EC;
+}
 
 .citation {
     font-size: 16px;
@@ -152,10 +186,6 @@ li:nth-child(2n + 2)  {
 }
 
 .secondary-white {
-    /*display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start; */
     width: 423px;
     margin: 32px;
     
@@ -242,7 +272,7 @@ li:nth-child(2n + 2)  {
 }
 
 .primary-thesis .caption{
-    margin: 24px 0 32px 0;
+    padding: 24px 0 32px 0;
 }
 
 
@@ -284,10 +314,11 @@ li:nth-child(2n + 2)  {
 
 footer {
     height: 64px;
-    border-top: 1px solid darkslategray;
+    border-top: 1px solid #1A111C;
     padding-top: 5px;
     align-items: flex-start;
     justify-content: space-between;
+    background-color: #C1B6CB;
 }
 
 
