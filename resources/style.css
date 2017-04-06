@@ -264,7 +264,6 @@ nav li {
 }
 
 
-
 .courses-section {
     display: flex;
     flex-direction: column;
@@ -347,10 +346,9 @@ footer {
 }
 
 
-
-
 .citation {
     font-size: 16px;
     font-weight: 600;
+    margin-top: 16px;
 }
 
