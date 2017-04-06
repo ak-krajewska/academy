@@ -29,38 +29,40 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #907F9F;
-    
-}
-
 a:visited {
     color: #695D74;
 }
 
+
+a:hover {
+    color: #907F9F;
+}
+
+
+
 h1 {
-    font-size: 40px;
+    font-size: 50px;
+    line-height: 1;
+    margin: 32px 0;
+    font-weight: bold;
 }
 
 
 h2 {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 14px;
+    font-size: 20px;
     font-weight: normal;
 }
 
 h4 {
-    font-size: 14px;
-    color: #029bce;
+    font-size: 18px;
+    font-weight: bold;
 }
 
-p {
-    line-height: 1.25em;
-}
 
 
 .container {
@@ -93,13 +95,13 @@ nav ul {
     justify-content: flex-end;
     list-style-type: none;
     height: 64px;
-    margin: 0;  
 }
 
 nav li {
     display: flex;
     align-items: center;
     height: 64px;
+    margin-right: 16px;
     
 }
 
@@ -112,16 +114,21 @@ nav li {
     color: #907F9F;
 }
 
-li:nth-child(2n + 2)  {
-   background-color: #907F9F;
-    width: 16px;
-}
 .brand {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
     padding-left: 24px;
 }
+
+/* mobile media quareies for nav */
+@media only screen and (max-width: 400px) {
+  #colmar, #academy, .bignav {
+    display: none;
+  }
+
+}
+
 
 /* body styles */
 
@@ -156,6 +163,7 @@ li:nth-child(2n + 2)  {
     padding: 8px 0;
     width: 100%;
     border-radius: 10px;
+    margin: 24px auto;
     
 }
 
@@ -192,19 +200,19 @@ li:nth-child(2n + 2)  {
 }
 
 .tertiary {
-    display: flex;    
+    display: flex;
+    justify-content: center;
+    
 }
 
 .tertiary-label {
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: space-around;   
+    padding: 10px 0;
 }
 
-.tertiary-label h2, h3 h4 {
-    margin: 0;
-    
-}
+
 
 
 #orientation {
@@ -235,19 +243,27 @@ li:nth-child(2n + 2)  {
 }
 
 .course {
-    /*display: flex;
-    flex-direction: column;*/
+    display: flex;
+    flex-direction: column;
     background-color: white;
     width: 289px;
 }
 
 .course-description {
+    display: flex;
+    flex-direction: column;
     padding: 16px 16px 24px 16px;
 }
 
-.course-description h2{
-    margin: 0;
+.course-description p {
+    margin: 8px 0;
 }
+
+.course-description h2  {
+    margin-bottom: 16px;
+}
+
+
 
 .courses-section {
     display: flex;
@@ -275,11 +291,20 @@ li:nth-child(2n + 2)  {
     padding: 24px 0 32px 0;
 }
 
+.caption h2 {
+    margin-bottom: 16px;
+}
+
 
 .secondary-thesis {
     display: flex;
     flex-direction: column;
     width: 423px;
+}
+
+.secondary-thesis h2 {
+    margin-bottom: 24px;
+    
 }
 
 .secondary-thesis img {
@@ -289,10 +314,10 @@ li:nth-child(2n + 2)  {
 .thesis-project {
     display: flex;
     align-items: center;
+    align-content: space-between;
 }
+   
 
-    
-}
 
 /* footer styles */
 
@@ -320,8 +345,6 @@ footer {
     justify-content: space-between;
     background-color: #C1B6CB;
 }
-
-
 
 
 
