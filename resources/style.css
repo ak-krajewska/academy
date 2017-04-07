@@ -8,15 +8,6 @@ div,nav, footer, ul {
 /* global styles */
 
 
-/* color scheme 
-
-#1A111C  EERIE BLACK
-#907F9F ROMAN SILVER  after click#695D74 DIM GRAY
-#E6E6E8 PLATINUM
-#E9EFED ISABELLINE
-#97C1AB CAMBRIDGE BLUE
-*/
-
 body {
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
@@ -25,7 +16,7 @@ body {
 }
 
 a {
-    color: #563872;
+    color: #1A111C;
     text-decoration: none;
 }
 
@@ -35,7 +26,7 @@ a:visited {
 
 
 a:hover {
-    color: #907F9F;
+    color: magenta;
 }
 
 
@@ -67,7 +58,6 @@ h4 {
 
 .container {
     display: flex;
-    width: 1172px;
     margin: 0 auto;
 }
 
@@ -84,8 +74,12 @@ h4 {
 nav {
     height: 64px;
     justify-content: space-between;
-    background-color: #C1B6CB;
-    
+    background-color: #C1B6CB;   
+}
+
+
+nav a:hover {
+    color: maroon;
     
 }
 
@@ -102,6 +96,7 @@ nav li {
     align-items: center;
     height: 64px;
     margin-right: 16px;
+    font-weight: bold;
     
 }
 
@@ -135,22 +130,21 @@ nav li {
 .primary {
     display: flex;
     flex-direction: column;
-    width: 706px;
+    width: 60%;
     margin: 32px 24px;
 }
 
 #banner {
-    background-image: url(images/banner.jpg);
+    background-image: url(images/banner2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 522px;
 }
 .secondary-gray {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 423px;
+    width: 40%;
     margin: 24px 0 32px 0;
     padding: 60px 120px 60px 16px;
 }
@@ -163,8 +157,7 @@ nav li {
     padding: 8px 0;
     width: 100%;
     border-radius: 10px;
-    margin: 24px auto;
-    
+    margin: 24px auto;   
 }
 
 .button:hover {
@@ -190,19 +183,17 @@ nav li {
     background-image: url(images/information-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 388px;
+    height: 100%;
 }
 
 .secondary-white {
-    width: 423px;
+    width: 40%;
     margin: 32px;
     
 }
 
 .tertiary {
-    display: flex;
-    justify-content: center;
-    
+    display: flex;   
 }
 
 .tertiary-label {
@@ -211,8 +202,6 @@ nav li {
     justify-content: space-around;   
     padding: 10px 0;
 }
-
-
 
 
 #orientation {
@@ -240,6 +229,7 @@ nav li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 10px 16px;
 }
 
 .course {
@@ -267,7 +257,8 @@ nav li {
 .courses-section {
     display: flex;
     flex-direction: column;
-    width: 932px;
+    /* width: 932px; */
+    width: 75%;
     margin: 0 auto 32px auto;
     justify-content: space-between;
 }
@@ -283,7 +274,12 @@ nav li {
     display: flex;
     flex-direction: column;
     margin: 0px 16px 32px 24px;
-    width: 709px;
+    /* width: 709px; */
+    width: 60%;
+}
+
+.primary-thesis video {
+    width: 100%;
 }
 
 .primary-thesis .caption{
@@ -298,7 +294,8 @@ nav li {
 .secondary-thesis {
     display: flex;
     flex-direction: column;
-    width: 423px;
+    /* width: 423px; */
+    width: 40%;
 }
 
 .secondary-thesis h2 {
