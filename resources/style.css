@@ -11,7 +11,7 @@ div,nav, footer, ul {
 body {
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 1rem;
+    font-size: 16px;
     color: #1A111C;
 }
 
@@ -75,6 +75,8 @@ h4 {
 /* nav styles */
 
 nav {
+    display: flex;
+    margin: 0 auto;
     height: 4rem;
     justify-content: space-between;
     background-color: #C1B6CB;   
@@ -151,26 +153,6 @@ nav li {
 /* body styles */
 
 
-
-@media only screen and (max-width: 1000px){ 
-
-    .mobile-gray {
-        display: flex;
-        flex-direction: column;
-    }
-    
-    #banner {
-        height: 300px;
-    }
-    
-}
-
-@media only screen and (max-width: 600px) {
-    #banner{
-        height: 180px;
-    }
-}
-
 .primary {
     display: flex;
     flex-direction: column;
@@ -200,7 +182,7 @@ nav li {
     background-color: #907F9F;
     font-size: 1.25rem;
     padding: .75rem 0;
-    width: 100%;
+    width: 75%;
     border-radius: 1rem;
     margin: 1.5rem auto;   
 }
@@ -260,6 +242,40 @@ nav li {
 
 #guest {
     padding: 1rem;
+}
+
+
+@media only screen and (max-width: 1000px){ 
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #banner {
+        height: 400px;
+    }
+    
+    .primary {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .secondary-gray {
+        width: 100%;
+        padding: 0;
+        margin: 0 1rem;
+    }
+    
+    .button {
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    #banner{
+        height: 180px;
+    }
 }
 
 
