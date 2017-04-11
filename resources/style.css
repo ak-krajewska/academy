@@ -11,7 +11,7 @@ div,nav, footer, ul {
 body {
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
-    font-size: 18px;
+    font-size: 1rem;
     color: #1A111C;
 }
 
@@ -29,28 +29,31 @@ a:hover {
     color: magenta;
 }
 
+p {
+    font-size: 1.25rem;
+}
 
 
 h1 {
-    font-size: 50px;
+    font-size: 3rem;
     line-height: 1;
-    margin: 32px 0;
+    margin: 2rem 0;
     font-weight: bold;
 }
 
 
 h2 {
-    font-size: 30px;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: normal;
 }
 
 h4 {
-    font-size: 18px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -72,7 +75,7 @@ h4 {
 /* nav styles */
 
 nav {
-    height: 64px;
+    height: 4rem;
     justify-content: space-between;
     background-color: #C1B6CB;   
 }
@@ -88,14 +91,15 @@ nav ul {
     align-content: center;
     justify-content: flex-end;
     list-style-type: none;
-    height: 64px;
+    height: 4rem;
 }
 
 nav li {
     display: flex;
     align-items: center;
-    height: 64px;
-    margin-right: 16px;
+    height: 4rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
     
 }
@@ -113,25 +117,65 @@ nav li {
     display: inline-flex;
     align-items: center;
     justify-content: flex-start;
-    padding-left: 24px;
+    padding-left: 1.5rem;
 }
 
 /* mobile media quareies for nav */
-@media only screen and (max-width: 400px) {
-  #colmar, #academy, .bignav {
+@media only screen and (max-width: 600px) {
+  #colmar, #academy, .bignav, .brand {
     display: none;
   }
+    nav.container {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .smallnav {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    nav li {
+        margin: 0 1rem;
+    }
+}
 
+@media only screen and (min-width: 601px) {
+    .smallnav{
+        display: none;
+    }
 }
 
 
 /* body styles */
 
+
+
+@media only screen and (max-width: 1000px){ 
+
+    .mobile-gray {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #banner {
+        height: 300px;
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    #banner{
+        height: 180px;
+    }
+}
+
 .primary {
     display: flex;
     flex-direction: column;
     width: 60%;
-    margin: 32px 24px;
+    margin: 2rem 1.5rem;
 }
 
 #banner {
@@ -145,8 +189,8 @@ nav li {
     align-items: center;
     justify-content: center;
     width: 40%;
-    margin: 24px 0 32px 0;
-    padding: 60px 120px 60px 16px;
+    margin: 1.5rem 0 2rem 0;
+    padding: 3.75rem 7.5rem 3.75rem 1rem;
 }
 
 .button {
@@ -154,10 +198,11 @@ nav li {
     text-align: center;
     color: white;
     background-color: #907F9F;
-    padding: 8px 0;
+    font-size: 1.25rem;
+    padding: .75rem 0;
     width: 100%;
-    border-radius: 10px;
-    margin: 24px auto;   
+    border-radius: 1rem;
+    margin: 1.5rem auto;   
 }
 
 .button:hover {
@@ -175,7 +220,7 @@ nav li {
 }
 
 .citation {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -188,7 +233,7 @@ nav li {
 
 .secondary-white {
     width: 40%;
-    margin: 32px;
+    margin: 2rem;
     
 }
 
@@ -205,16 +250,16 @@ nav li {
 
 
 #orientation {
-    padding: 0 16px 0 16px;
+    padding: 0 1rem 0 1rem;
 }
 
 #campus {
-    padding: 16px;
+    padding: 1rem;
 }
 
 
 #guest {
-    padding: 16px;
+    padding: 1rem;
 }
 
 
@@ -222,14 +267,14 @@ nav li {
 
 #start-learning {
     justify-content: center;
-    padding: 16px 0 10px 0;
+    padding: 1rem 0 10px 0;
 }
 
 .courses-list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 10px 16px;
+    margin: 10px 1rem;
 }
 
 .course {
@@ -242,24 +287,23 @@ nav li {
 .course-description {
     display: flex;
     flex-direction: column;
-    padding: 16px 16px 24px 16px;
+    padding: 1rem 1rem 1.5rem 1rem;
 }
 
 .course-description p {
-    margin: 8px 0;
+    margin: .5rem 0;
 }
 
 .course-description h2  {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 
 .courses-section {
     display: flex;
     flex-direction: column;
-    /* width: 932px; */
     width: 75%;
-    margin: 0 auto 32px auto;
+    margin: 0 auto 2rem auto;
     justify-content: space-between;
 }
 
@@ -267,14 +311,13 @@ nav li {
 
 #thesis {
     justify-content: center;
-    padding: 16px 0 10px 0;
+    padding: 1rem 0 10px 0;
 }
 
 .primary-thesis {
     display: flex;
     flex-direction: column;
-    margin: 0px 16px 32px 24px;
-    /* width: 709px; */
+    margin: 0px 1rem 2rem 1.5rem;
     width: 60%;
 }
 
@@ -283,28 +326,27 @@ nav li {
 }
 
 .primary-thesis .caption{
-    padding: 24px 0 32px 0;
+    padding: 1.5rem 0 2rem 0;
 }
 
 .caption h2 {
-    margin-bottom: 16px;
+    margin-bottom: 1rem;
 }
 
 
 .secondary-thesis {
     display: flex;
     flex-direction: column;
-    /* width: 423px; */
     width: 40%;
 }
 
 .secondary-thesis h2 {
-    margin-bottom: 24px;
+    margin-bottom: 1.5rem;
     
 }
 
 .secondary-thesis img {
-    padding: 16px;
+    padding: 1rem;
 }
 
 .thesis-project {
@@ -321,20 +363,20 @@ nav li {
 
 .copyright {
     display: flex;
-    padding-left: 24px;
+    padding-left: 1.5rem;
 }
 
 .legal {
     display: flex;
-    padding-right: 16px;
+    padding-right: 1rem;
 }
 
 .legal span {
-    padding-left: 16px;
+    padding-left: 1rem;
 }
 
 footer {
-    height: 64px;
+    height: 4rem;
     border-top: 1px solid #1A111C;
     padding-top: 5px;
     align-items: flex-start;
@@ -344,8 +386,8 @@ footer {
 
 
 .citation {
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 600;
-    margin-top: 16px;
+    margin-top: 1rem;
 }
 
