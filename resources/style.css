@@ -252,6 +252,10 @@ nav li {
         flex-direction: column;
     }
     
+    h1 {
+        text-align: center;
+    }
+    
     #banner {
         height: 400px;
     }
@@ -267,14 +271,39 @@ nav li {
         margin: 0 1rem;
     }
     
+    
+    .secondary-white {
+        width: 100%;
+    }
+    
     .button {
         width: 60%;
+    }
+    
+    .tertiary {
+        flex-direction: column;
+    }
+    
+    .tertiary-label{
+        justify-content: space-between;
+        padding: 1rem;
+        line-height: 1.5;
+    }
+    
+    .desktop {
+        display: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
     #banner{
         height: 180px;
+    }
+}
+
+@media only screen and (min-width: 1001px){
+    .mobile {
+        display: none;
     }
 }
 
@@ -371,7 +400,11 @@ nav li {
     align-content: space-between;
 }
    
-
+@media only screen and (max-width: 1000px){ 
+    .secondary-thesis {
+        display: none;
+    }
+}
 
 /* footer styles */
 
