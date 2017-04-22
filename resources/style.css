@@ -352,6 +352,36 @@ nav li {
     justify-content: space-between;
 }
 
+@media only screen and (max-width: 1000px){ 
+    .course img {
+        display: none;
+    }
+    
+    .course p {
+        display: none;
+    }
+    
+    .courses-list {
+        flex-direction: column;
+        margin: 0;
+    }
+    
+    .course {
+        width: 100%;
+        margin: .5rem;
+    }
+    
+    .courses-section {
+        width: 90%;
+    }
+    
+    .course-description h2  {
+        margin: 0;
+        padding: 1rem 1rem .5rem 1rem;
+    }   
+    
+}
+
 /* thesis styles */
 
 #thesis {
